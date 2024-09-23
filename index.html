@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+      <div class="contentWrapper">
+        <div class="scores">
+          <div class="player1"><h2>1P score:</h2><h2 id="p1scorelbl"></h2></div>
+          <div class="player2"><h2>2P score:</h2><h2 id="p2scorelbl"></h2></div>
+        </div>
+        <div class="mainContent">
+          <div class="pside p1side">
+            <div class="actionTitle">
+              <h2>Choose your character</h2>
+            </div>
+            <div class="actions">
+              <button class="actionBtn" id="p1rock" onclick="p1action('ROCK!', rock)">Rock</button>
+              <button class="actionBtn" id="p1pap" onclick="p1action('PAPER!', pap)">Paper</button>
+              <button class="actionBtn" id="p1sc" onclick="p1action('SCISSORS!', sc)">Scissors</button>
+            </div>
+            <div class="p1choice">
+              <h1>
+                Player 1 chose
+              </h1>
+              <h2 id="p1choicelbl"></h2>
+            </div>
+          </div>
+          <div class="result">
+            <button class="actionBtn" onclick="whoWon()">
+                Decide
+            </button>
+            <div class="winner">
+              <h2 id="winnerName"></h2>
+            </div>
+            <div class="phrase">
+              <p id="battlePhase">
+              Players are picking....
+            </p></div>
+          </div>
+          <div class="pside p2side">
+            <div class="actionTitle">
+              <h2>Choose your character</h2>
+          </div>
+          <div class="actions">
+            <button class="actionBtn" id="p2rock" onclick="p2action('ROCK!', rock)">Rock</button>
+            <button class="actionBtn" id="p2pap" onclick="p2action('PAPER!', pap)">Paper</button>
+            <button class="actionBtn" id="p2sc" onclick="p2action('SCISSORS', sc)">Scissors</button>
+          </div>
+          <div class="p2choice">
+            <h1>
+              Player 2 chose
+            </h1>
+            <h2 id="p2choicelbl"></h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

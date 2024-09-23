@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #E0E1DD;
+    font-family: "Yatra One", system-ui;
+}
+
+body{
+    background-color: #0D1B2A;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    font-size: x-large;
+}
+
+main{
+    height: 90dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scores{
+    width: 60%;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.mainContent{
+    width: 100%;
+    height: 90%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player1, .player2{
+    display: flex;
+    gap: 1em;
+}
+
+.pside{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionBtn{
+    background-color: #25587A; /* Even Darker Sky Blue */
+    color: #E0E1DD; /* Ivory */
+    border: 2px solid #1F4068; /* Deep Navy */
+    box-shadow: 0px 2px 4px #1F4068; /* Deep Navy */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+}
+
+.actionBtn:hover{
+    background-color: #2E6F9F; /* Darker Sky Blue */
+    box-shadow: 0px 4px 8px #1F4068; /* Slightly larger shadow on hover */
+}
+.actionBtn:active{
+    background-color: #1F4068; /* Deep Navy */
+    box-shadow: 0px 1px 2px #1F4068; /* Slightly reduced shadow on press */
+    transform: translateY(2px); /* Creates a pressed effect */
+}
+
+.result{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.winner{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
